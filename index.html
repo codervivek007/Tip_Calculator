@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h5>&copy; Vivek Debnath &trade;</h5>
+    <div class="container">
+        <h1>TIP CALCULATOR</h1>
+        <div class="wrapper">
+            <p>Enter Your Bill Amount</p>
+            <input type="text" id="amount"> ₹
+            <p>How was the service ?</p>
+            <select id="services">
+                <option selected disabled hidden>
+                    Select
+                </option>
+                <option value="0.20">Excellent - 20% </option>
+                <option value="0.10">Medium - 10% </option>
+                <option value="0.05">Not So Good - 5% </option>    
+            </select>
+            <p>How Many People Are Sharing The Bill ?</p>
+            <input type="text" id="persons">
+            <button id="calculate">Calculate</button>
+        </div>
+
+        <div class="tip">
+        <p>Tip Amount</p>
+            <span id="total">0</span>₹
+            <span id="each">Each</span>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
